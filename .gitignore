@@ -1,0 +1,76 @@
+# ------------------------------
+# Node / Next.js
+# ------------------------------
+frontend/node_modules/
+frontend/.next/
+frontend/.turbo/
+frontend/out/
+frontend/.vercel/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# ------------------------------
+# Python / Poetry / FastAPI
+# ------------------------------
+
+# Ignore compiled caches recursively
+backend/**/*.pyc
+backend/app/**/__pycache__/
+backend/app/**/.mypy_cache/
+backend/app/**/.pytest_cache/
+backend/app/**/.ruff_cache/
+backend/app/**/.coverage
+backend/app/**/htmlcov/
+backend/__pycache__/
+backend/.mypy_cache/
+backend/.pytest_cache/
+backend/.venv/
+backend/venv/
+backend/.coverage
+backend/htmlcov/
+backend/dist/
+backend/build/
+backend/*.egg-info/
+backend/.env
+
+# ------------------------------
+# Cursor / Internal project files
+# ------------------------------
+.cursor/
+TASKS.md
+CONTRIBUTING.md
+
+# ------------------------------
+# General / OS junk
+# ------------------------------
+.env
+.env.local
+.env.*.local
+.DS_Store
+*.swp
+*.swo
+*.bak
+.idea/
+.vscode/
+*.iml
+
+# ------------------------------
+# Docker / build artifacts
+# ------------------------------
+**/docker-data/
+**/tmp/
+**/logs/
+**/coverage/
+**/.pytest_cache/
+**/.next/
+
+# ------------------------------
+# Playwright / testing
+# ------------------------------
+frontend/test-results/
+frontend/playwright-report/
+frontend/playwright/.cache/
