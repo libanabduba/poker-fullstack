@@ -19,6 +19,8 @@ yarn-error.log*
 
 # Ignore compiled caches recursively
 backend/**/*.pyc
+__pycache__/
+*.py[cod]
 backend/app/**/__pycache__/
 backend/app/**/.mypy_cache/
 backend/app/**/.pytest_cache/
@@ -32,17 +34,14 @@ backend/.venv/
 backend/venv/
 backend/.coverage
 backend/htmlcov/
+.cursor/
+TASKS.md
+CONTRIBUTING.md
 backend/dist/
 backend/build/
 backend/*.egg-info/
 backend/.env
-
-# ------------------------------
-# Cursor / Internal project files
-# ------------------------------
-.cursor/
-TASKS.md
-CONTRIBUTING.md
+backend/tests/__pycache__
 
 # ------------------------------
 # General / OS junk
